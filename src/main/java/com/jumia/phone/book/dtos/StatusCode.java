@@ -1,0 +1,39 @@
+package com.jumia.phone.book.dtos;
+
+public enum StatusCode {
+	
+	SUCCESSFULL( 2001) , 
+	BADREQUEST (4001),
+	NOTFOUND (4002),
+	UNIQUE (4003),
+	REQUIRED(4004),
+	DATENOTVALID(4010),
+	PASSWORDLENGHTNOTVALID (4011),
+	USERNAMEPASSINVALID (4012) ,
+	USERNOTFOUND (4013),
+	USEREXPIRED (4014),
+	PASSWORDNOTCHANGED (4015),
+	FILENAMEEXCEEDALLOWEDCHARS (4016),
+	FAILDSENDEMAIL(4017),
+	CHECKAVAILABLEFAILED(4018),
+	INVITATIONACCEPTANCEFAILED(4019),
+	LEAVETEAMFAILED(4020),
+	CREATETEAMFAILED(4021),
+	UPDATETEAMFAILED(4022),
+	INVITATIONFAILED(4023)
+	;
+	
+	
+	    private final int value;
+	    
+	    StatusCode(int value)
+	    {
+	    	this.value = value;
+	    }
+	    
+	    public int getValue()
+	    {
+	    	return this.value;
+	    }
+
+}
