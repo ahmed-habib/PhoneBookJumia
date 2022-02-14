@@ -1,4 +1,4 @@
-* Running the Bake-end application on STS Using the embedded tomcat
+* Running the backend application on STS Using the embedded tomcat
 
 	1- import the app into the STS
 	
@@ -7,7 +7,7 @@
 		
 	3- right click on the application then choose "Run As" then choose "Spring Boot App"
 
-* Running the Bake-end application on docker
+* Running the backend application on docker
 
 	1- CD to be inside the project
 	
