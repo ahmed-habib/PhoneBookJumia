@@ -2,8 +2,6 @@ package com.jumia.phone.book.restapi;
 
 import java.util.List;
 
-import javax.websocket.server.PathParam;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +34,7 @@ public class PhoneBookRestController {
 		ResponseDTO responseDto = null;
 
 		// Get Result CustomerDTO Object
-		List<CustomerDTO> resultObj = phoneBookService.LoadAllCustomers(countryCode, state);
+		List<CustomerDTO> resultObj = phoneBookService.loadAllCustomers(countryCode, state);
 
 		if (resultObj != null)
 			responseDto = new ResponseDTO(StatusCode.SUCCESSFULL, "Data Retreived Successfully", resultObj);

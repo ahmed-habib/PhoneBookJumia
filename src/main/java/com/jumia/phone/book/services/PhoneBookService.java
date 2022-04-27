@@ -6,5 +6,5 @@ import com.jumia.phone.book.dtos.CustomerDTO;
 
 public interface PhoneBookService {
 	
-	List<CustomerDTO> LoadAllCustomers(String countryCode,String state);
+	List<CustomerDTO> loadAllCustomers(String countryCode,String state);
 }

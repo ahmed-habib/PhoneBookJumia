@@ -38,7 +38,7 @@ public class PhoneBookServiceImpl extends BasicServiceImpl<BaseDTO, BaseEntity> 
 	}
 
 	@Override
-	public List<CustomerDTO> LoadAllCustomers(String countryCode, String state) {
+	public List<CustomerDTO> loadAllCustomers(String countryCode, String state) {
 		List<CustomerDTO> customersDtos = new ArrayList<>();
 		Map<String, String[]> validCountries = getCountryDetails(countryCode);
 
